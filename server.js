@@ -11,7 +11,7 @@ const server = http.createServer(app);
 const { Server } = require("socket.io");
 const io = new Server(server, {
   cors: {
-    origin: "https://chat-app-live.onrender.com' ",
+    origin: "https://chat-app-live.onrender.com",
     methods: ["GET", "POST"],
   },
 });
