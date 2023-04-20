@@ -18,6 +18,9 @@ const io = new Server(server, {
 
 app.use(express.json());
 app.use(cors());
+app.get("/", (req, res) => {
+  res.send("Backend");
+});
 app.use("/", messagesRouter);
 
 io.on("connection", (socket) => {
